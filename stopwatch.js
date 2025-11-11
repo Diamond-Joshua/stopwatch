@@ -34,6 +34,11 @@ stopBtn.addEventListener("click",()=>{
     clearInterval(timer)
 })
 restartBtn.addEventListener("click",()=>{
+    clearInterval(timer)
+    [hours, minutes, seconds] = [0,0,0];
+    stopwatchCounter.innerHTML = "00:00:00";
+})
+restartBtn.addEventListener("click",()=>{
     clearInterval(timer);
     [hours, minutes, seconds] = [0,0,0];
     stopwatchCounter.innerHTML = "00:00:00";
